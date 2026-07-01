@@ -7,11 +7,11 @@ import Col from "react-bootstrap/Col";
 function Cards({ books }) {
   return (
     <Container>
-      <Row>
+      <Row className="g-4">
         {books.map((book) => (
-          <Col key={book.asin} md={4}>
-            <Card>
-              <Card.Img variant="top" src={book.img} />
+          <Col key={book.asin} xs={12} sm={6} md={4}>
+            <Card className="h-100">
+              <Card.Img variant="top" src={book.img} className="cardImg" />
               <Card.Body>
                 <Card.Title className="cardTitle">{book.title}</Card.Title>
               </Card.Body>
