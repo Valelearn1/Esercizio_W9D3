@@ -6,10 +6,25 @@
 }
 
 .hero {
-  background-color: #e9ecef;
+  background-image: url("./assets/background.jpeg");
+  background-size: cover;
+  background-position: center;
   text-align: center;
   padding-top: 50px;
   padding-bottom: 30px;
+  margin-bottom: 30px;
+}
+
+.heroBox {
+  display: inline-block;
+  background-color: rgba(0, 0, 0, 0.55);
+  color: aliceblue;
+  padding: 20px 30px;
+  border-radius: 8px;
+}
+
+.fontStyle::placeholder {
+  font-style: italic;
 }
 
 footer {
@@ -17,11 +32,17 @@ footer {
   color: white;
   text-align: center;
   padding: 1rem;
+  margin-top: 30px;
+  border-radius: 8px;
+  font-style: italic;
 }
 
 .wrapper {
   width: 60%;
   margin: 0 auto;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
 }
 
 .cardTitle {
@@ -29,7 +50,7 @@ footer {
 }
 
 .cardImg {
-  height: 250px;
-  object-fit: contain;
+  height: 300px;
+  object-fit: fill;
   background-color: #f1f1f1;
 }

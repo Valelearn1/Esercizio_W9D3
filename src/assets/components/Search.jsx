@@ -4,12 +4,13 @@ function Search({ searchTitle, onSearchChange }) {
   return (
     <Form>
       <Form.Group className="mb-3">
-        <Form.Label>Cerca un libro</Form.Label>
+        <Form.Label>Find a book:</Form.Label>
         <Form.Control
           type="text"
-          placeholder="Titolo del libro..."
+          placeholder="Title of the book..."
           value={searchTitle}
           onChange={(e) => onSearchChange(e.target.value)}
+          className="fontStyle"
         />
       </Form.Group>
     </Form>

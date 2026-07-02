@@ -1,8 +1,10 @@
 function Hero() {
   return (
     <div className="hero">
-      <h2>Welcome to EpiBooks!</h2>
-      <p>We list books.</p>
+      <div className="heroBox">
+        <h2>Welcome to EpiBooks!</h2>
+        <p>Choose the books you like.</p>
+      </div>
     </div>
   );
 }
